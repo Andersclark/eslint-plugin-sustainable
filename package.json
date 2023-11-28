@@ -2,6 +2,10 @@
   "name": "eslint-plugin-sustainable",
   "version": "0.0.0",
   "description": "Keeping the climate impact of code low.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Andersclark/eslint-plugin-sustainable"
+  },
   "keywords": [
     "eslint",
     "eslintplugin",
