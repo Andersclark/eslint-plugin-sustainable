@@ -48,7 +48,7 @@ The command will add files for the rule, documentation and tests in the correspo
 
 ### Writing the rule
 
-The (AST Explorer)[https://astexplorer.net] can be used to understand how the code is parsed and to debug rules.
+The [AST Explorer](https://astexplorer.net) can be used to understand how the code is parsed and to debug rules.
 
 Set the AST explorer to use `babel-eslint` and to transform with `ESlint v8` (as of 2023-12-01).
 
