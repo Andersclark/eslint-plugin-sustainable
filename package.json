@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-sustainable",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Keeping the climate impact of code low.",
   "repository": {
     "type": "git",
