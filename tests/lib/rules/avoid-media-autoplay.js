@@ -11,31 +11,37 @@
 const rule = require('../../../lib/rules/avoid-media-autoplay'),
   RuleTester = require('eslint').RuleTester
 
+const config = {
+  parserOptions: {
+    ecmaFeatures: {
+      jsx: true,
+    },
+  },
+}
+
 //------------------------------------------------------------------------------
 // Tests
 //------------------------------------------------------------------------------
 
-const ruleTester = new RuleTester()
-ruleTester.run('avoid-video-autoplay', rule, {
+const ruleTester = new RuleTester(config)
+ruleTester.run('avoid-media-autoplay', rule, {
   valid: [
     {
       code: '<video />',
-      errors: [{ message: 'Fill me in.', type: 'Me too' }],
     },
     {
       code: '<video autoplay={false} />',
-      errors: [{ message: 'Fill me in.', type: 'Me too' }],
     },
   ],
 
   invalid: [
     {
       code: '<video autoplay />',
-      errors: [{ message: 'Fill me in.', type: 'Me too' }],
+      errors: [{ message: 'Avoid autoplaying media', type: 'JSXAttribute' }],
     },
     {
       code: '<video autoplay={true} />',
-      errors: [{ message: 'Fill me in.', type: 'Me too' }],
+      errors: [{ message: 'Avoid autoplaying media', type: 'JSXAttribute' }],
     },
   ],
 })
