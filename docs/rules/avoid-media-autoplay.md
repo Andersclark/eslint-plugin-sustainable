@@ -1,4 +1,6 @@
-# Avoid autoplaying videos (`avoid-video-autoplay`)
+# Autplaying media loads data that may not be consumed by the user (`sustainable/avoid-media-autoplay`)
+
+<!-- end auto-generated rule header -->
 
 Streamed media content represents a large portion of data transmitted over the internet. By not defaulting to autoplaying media, the climate impact of this can be minimised.
 
