@@ -1,4 +1,6 @@
-# Avoid inefficient image formats (`avoid-inefficient-iomage`)
+# Avoid inefficient image formats (`sustainable/avoid-inefficient-image`)
+
+<!-- end auto-generated rule header -->
 
 Inefficient file encoding requires internet infrastructure, and ultimately the client to process larger files, which consumes more energy and potentially slows down the user experience,.
 
